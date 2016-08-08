@@ -68,6 +68,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> 
+>> Spyder. Currently (just starting) I like the different color highlights for different parts of the code. For debugging purposes, I like the ability to highlight a line of code and run that line by itself.
 
  
