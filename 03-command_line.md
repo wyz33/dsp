@@ -34,7 +34,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
        
        syntax: touch FILENAME
 9. |: pipes output from left side of bar to the function on the right
-10. <,>: same as pipe, but directional
+10. <,>: same as pipe, but directional, and also can funnel input into a file.
 
 
 ---
@@ -78,7 +78,15 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+xargs takes space, tab, newline and end-of-file delimited strings from the standard input and executes a specific function with the strings as arguments. It will cycle through and execute the funciton repeatedly until the input is exhausted.
+
+Example:
+
+I have a text file ex1.txt where there is a list of file names (separated by space), which I would like to use to create a whole new set of files. To do this using xargs, I would use the command line:
+
+cat ex1.txt | xargs touch
+
+This would create a single file for each entry in ex1.txt in the current directory.
 
  
 
