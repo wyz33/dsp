@@ -13,12 +13,27 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > pushd: pushes current directory to a list for later reference
+1. pushd: pushes current directory to a list for later reference
+
        syntax : pushd NEW_DIR
-> > popd: Takes the latest directory on the list and cd to there
+2. popd: Takes the latest directory on the list and cd to there
+3. find:
 
+       syntax: find DIR -name WILDCARD -print
+4. env: displays all environmental variables
+5. echo (ENV): displays value of environmental variable
 
+       syntax: echo $VARIABLENAME
+6. export: create or changes environmental variables
 
+       syntax: export VARIABLE=value (or "value with space in between words")
+
+7. grep: find text strings
+8. touch: create new file
+       
+       syntax: touch FILENAME
+9. |: pipes output from left side of bar to the function on the right
+10. <,>: same as pipe, but directional
 ---
 
 ###Q2.  List Files in Unix   
