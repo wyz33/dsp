@@ -13,6 +13,7 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
+
 1. pushd: pushes current directory to a list for later reference
 
        syntax : pushd NEW_DIR
@@ -49,7 +50,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+1. ls : list files in the directory
+2. ls -a : list all files and directories in the directory, including the hidden files (starting with .)
+3. ls -l : list files and directories with information about size, modification date/time, name, owner, and permission.
+4. ls -lh: same as -l, but also show size in human readable formats
+5. ls -lah: combines the above three, show all files and directories, including hidden ones, in long format listing with human readable formats
+6. ls -t: sort the files and directories listed by time stamp (newest first)
+7. ls -Glp: list files and directories without printing group names, in long format listing, with directories indicated with a "/" after their names.
+
 
 ---
 
