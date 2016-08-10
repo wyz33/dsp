@@ -34,6 +34,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
        syntax: touch FILENAME
 9. |: pipes output from left side of bar to the function on the right
 10. <,>: same as pipe, but directional
+
+
 ---
 
 ###Q2.  List Files in Unix   
