@@ -13,8 +13,11 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> pushd/popd
-> find STARTDIR -name WILDCARD -print
+> > pushd: pushes current directory to a list for later reference
+       syntax : pushd NEW_DIR
+> > popd: Takes the latest directory on the list and cd to there
+
+
 
 ---
 
