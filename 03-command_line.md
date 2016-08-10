@@ -56,7 +56,7 @@ What do the following commands do:
 4. ls -lh: same as -l, but also show size in human readable formats
 5. ls -lah: combines the above three, show all files and directories, including hidden ones, in long format listing with human readable formats
 6. ls -t: sort the files and directories listed by time stamp (newest first)
-7. ls -Glp: list files and directories without printing group names, in long format listing, with directories indicated with a "/" after their names.
+7. ls -Glp: list files and directories with colorized output, in long format listing, with directories indicated with a "/" after their names.
 
 
 ---
@@ -65,7 +65,10 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+1. -U      Use time of file creation, instead of last modification for sorting (-t) or long output (-l).
+2. -r      Reverse the order of the sort to get reverse lexicographical order or the oldest entries first (or largest files last, if
+             combined with sort by size
+3. -S      Sort files by size
 
 ---
 
