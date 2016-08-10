@@ -69,6 +69,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 2. -r      Reverse the order of the sort to get reverse lexicographical order or the oldest entries first (or largest files last, if
              combined with sort by size
 3. -S      Sort files by size
+4. -m      Stream output format; list files across the page, separated by commas.
+5. -d      Displays only directories
 
 ---
 
