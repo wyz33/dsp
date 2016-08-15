@@ -1,5 +1,6 @@
 # Learn Python
 
+
 Read Allen Downey's [Think Python](http://www.greenteapress.com/thinkpython/) for getting up to speed with Python 2.7 and computer science topics. It's completely available online, or you can buy a physical copy if you would like.
 
 <a href="http://www.greenteapress.com/thinkpython/"><img src="img/think_python.png" style="width: 100px;" target="_blank"></a>
@@ -43,7 +44,16 @@ When finding an element, it is much faster to do it in a set instead of a list. 
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> lambda is an annonymous function
+>> lambda is an anonymous function that one can use to define a short function that you only need once or twice. When using lambda,you can use the function to interface with other functions without having to write the definition of the function separately.
+	Example 1. Using lambda function to filter a list of numbers:
+		numbers = [i in range(1, 101)] #creates a list of numbers from 1 to 100
+		even_numbers = filter(lambda x: x%2 ==0, numbers) #defines a lambda function where x%2==0, and filters the list numbers based on that condition.
+	Example 2. Using lambda function as a key to sorted: 
+		A list of tuples for a class of students, with different columns for name, age, and grades of the students:
+		students = [ ('Elle', 13, 'B'),('Adam', 14, 'A'), ('Jane', 12, 'C')]
+		#normally when using sorted(students), the program will default to sorting the first column, the names. However, with the key function, we can sort the tuple based on any user-defined column
+		sorted(students, key= lambda a: a[1]) #This will sort by the 2nd column, or age. To sort by grades, we can change it to lambda a: a[2]
+ 
 
 ---
 
@@ -51,8 +61,27 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension:A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses. The result will be a new list resulting from evaluating the expression in the context of the for and if clauses which follow it.
+	Example (1) for every element in a list of numbers from 1 to 10, return a new list that consists of the square of each number.
+	a. list comprehension way:
+	square = [x**2 for x in range(1,11)]
+	b. 'map' way:
+	square = map(lambda x:x**2, range(1,11))
 
+	Example (2) from a list of numbers from 1 to 100, return a new list of only odd numbers
+	a. list comprehension way:
+	odd = [x for x in range(1, 101) if x%2!=0]
+	b. 'filter' way:
+	odd = filter(lambda x: x%2!=0, range(1, 101))
+
+   So far it seems that list comprehension and map/filter has similar capabilities. For me the choice is only based on stylistic preferences at the moment.
+
+   Based on my current understanding, set and dictionary comprehension is very similar to list comprehension. 
+        Example(3) Set comprehension: 
+	square_set = {x**2 for x in range(1, 11)}
+	
+	Example(4) Dictionary comprehension:
+	square_dict = {x:x**2 for x in range (1, 11)}	
 ---
 
 ###Complete the following problems by editing the files below:
