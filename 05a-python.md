@@ -12,7 +12,8 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>  Both lists and tuples are sequences. The biggest difference is that lists are mutable (i.e. you can change any element of the list at anytime after the list has been created), whereas tuples are immutable. 
+    Dictionaries can only accpet immutable inputs as keys. so only tuples will work as keys in dictionaries.
 
 ---
 
@@ -20,7 +21,21 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> lists and sets are both collections of elements. However, lists are ordered sequence of muttable elements while sets are unordered collection of unique immutable elements. 
+Their main differences are that (1) lists can have duplicates while sets cannot, (2)list elements are ordered by indices while elements in a set is unordered, and (3)lists are muttable and sets are immutable.
+
+Example for usage:
+(1) use a list when you will want to preserve the order the elements are in, sort the elements, and update elements as they change without creating a new list:
+	ex. list of grades for a class: you will want to be able to sort from highest to lowest
+	    this is probably best done by having a list of tuples which contain the name of the student and their grade: [('Name1', grade1), ('Name2', grade2), etc]
+(2) use a set when you want to make sure that there are no duplicates in your collection, want to check if an item already exist in the set, or want to compare the differences between two sets:
+	ex. a set of guests' names for a wedding.Starting with separate sets for the groom and bride:
+	    groom = set(['Name1', 'Name2', 'Name3', etc])
+	    bride = set(['Name4', 'Name5', 'Name1', etc])
+        when needed, one can use the union function: groom.union(bride) to combine the guest lists which automatically ensures that there will be no repeats (also a nice metaphor).
+
+When finding an element, it is much faster to do it in a set instead of a list. This is because Python uses a hashtable when searching for an element in a set, whereas it would look through every single element in a list. 
+ 
 
 ---
 
@@ -28,7 +43,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> lambda is an annonymous function
 
 ---
 
