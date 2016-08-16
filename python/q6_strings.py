@@ -18,6 +18,16 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    s = 'Number of donuts: '
+    if count <10:
+        s += str(count)
+        
+    else:
+        s += 'many'
+    
+    return s
+    print s
+    
     raise NotImplementedError
 
 
@@ -37,6 +47,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    res = ''
+    if len(s)>= 2:
+        res= res+s[:2] +s[len(s)-2:]
+    return res
+    print res
+    
     raise NotImplementedError
 
 
@@ -56,6 +72,17 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    first = s[0]
+    rest = s[1:]
+    res = first
+    for i in rest:
+        if i==first:
+            res+='*'
+        else:
+            res+=i
+    
+    return res
+    print res
     raise NotImplementedError
 
 
@@ -74,6 +101,12 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    new_a = b[0]+a[1:]
+    new_b = a[0]+b[1:]
+    
+    print new_a, new_b
+    return (new_a, new_b)
+        
     raise NotImplementedError
 
 
@@ -91,6 +124,15 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    res = s
+    if len(s) >= 3:
+        if s[(len(s)-3):] =='ing':
+            res+='ly'
+        else:
+            res+='ing'
+    return res
+    print res    
+    
     raise NotImplementedError
 
 
@@ -111,6 +153,24 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    n_index = s.find('not')
+    b_index = s.find('bad')
+    
+    if n_index <0 or b_index <0:
+        res = s
+        return res
+    elif n_index > b_index:
+        res = s
+        return res
+    else:
+        subs = s[n_index:b_index+3] 
+        
+        res = s.replace(subs, 'good')
+        return res
+    
+    print res
+    
+    
     raise NotImplementedError
 
 
@@ -130,4 +190,14 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    a_half_point = len(a)/2+len(a)%2
+    b_half_point = len(b)/2+len(b)%2
+    af = a[:a_half_point]
+    ab = a[a_half_point:]
+    bf = b[:b_half_point]
+    bb = b[b_half_point:]
+    
+    newstr= af+bf+ab+bb
+    return newstr
+    
     raise NotImplementedError
