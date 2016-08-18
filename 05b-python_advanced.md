@@ -77,12 +77,12 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
               'Li': [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'], ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']]}
 ```
 Print the first 3 key and value pairs of the dictionary:
-
+```
 first three sorted key and value pairs in alphabetical order:
 Bellamy [[' Sc.D.', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu']]
 Bilker [['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']]
 Bryan [[' PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']]
-
+```
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
 ```
@@ -90,13 +90,13 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 ```
 
 Print the first 3 key and value pairs of the dictionary:
-
+```
 ('A. Russell', 'Localio') [' JD MA MPH MS PhD', 'Associate Professor of Biostatistics', 'rlocalio@upenn.edu']
 ('Alisa Jane', 'Stephens') [' Ph.D.', 'Assistant Professor of Biostatistics', 'alisaste@mail.med.upenn.edu']
 ('Andrea Beth', 'Troxel') [' ScD', 'Professor of Biostatistics', 'atroxel@mail.med.upenn.edu']
-
+```
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
-
+```
 ('Scarlett L.', 'Bellamy') [' Sc.D.', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu']
 ('Warren B.', 'Bilker') ['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']
 ('Matthew W', 'Bryan') [' PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']
@@ -134,7 +134,7 @@ Print the first 3 key and value pairs of the dictionary:
 ('Sharon Xiangwen', 'Xie') [' Ph.D.', 'Associate Professor of Biostatistics', 'sxie@mail.med.upenn.edu']
 ('Dawei', 'Xie') [' PhD', 'Assistant Professor of Biostatistics', 'dxie@upenn.edu']
 ('Wei (Peter)', 'Yang') [' Ph.D.', 'Assistant Professor of Biostatistics', 'weiyang@mail.med.upenn.edu']
-
+```
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
 --- 
