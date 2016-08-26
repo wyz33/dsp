@@ -5,7 +5,7 @@ If we base our calculation solely on surveys with the children, we would get a b
 However, if we calculate our mean based on the actual data based on the the NSFG survey, we get a mean of 1.024 minors per household.
 
 If we further examine the two pmfs below we can see that when a family has no children, they are not represented at all in the biased pmf, whereas the number of families with 1 child is accurated represented in both pmfs (since the single child will not inflate the result), and the more children the family has, the more inflated the results in the biased pmf.
-!(img/3-1-actual_biased_fig.png)
+![pmf figure](wyz33/dsp/blob/master/img/3-1-actual_biased_fig.png)
 
 Below are the codes I used to get the results:
 ```
