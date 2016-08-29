@@ -4,7 +4,7 @@
 If we look at the PMF and CDF generated, this is indeed the case. The PMF is 0.01 (1 out of 100) for all numbers picked, and the CDF is roughly a diagonal line (just like the percentile rank CDF), which is indicative of equal distribution of all the numbers.
 If there is uneven distribution, we should see sharp rises in the CDF, but this is not the case.
 
-![pmf figure](https://github.com/wyz33/dsp/blob/master/img/4-2-random.png
+![random figure](https://github.com/wyz33/dsp/blob/master/img/4-2-random.png)
 
 Below is the code I used to generate the list of 100 numbers, as well as its PMF and CDF
 ```
