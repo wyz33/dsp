@@ -76,11 +76,12 @@ H2: Evlis is a identical twin (IT);
 The data we are given (D) is that both elvis and his twin are male.
 
 Assuming that the chances for any given embryo to be male or female to be half and half, we can create the following table:
+```
      | p(H) |  p(D|H) |  p(H)p(D|H)  |  p(H|D)
 -----|------|---------|--------------|---------  
   H1 | 1/125| 1/2*1/2 |     1/500    | 6/11 
   H2 | 1/300| 1/2     |     1/600    | 5/11
-
+```
 So the probably of Elvis being a identical twin is 5/11
 
 ###Q6. Bayesian &amp; Frequentist Comparison  
