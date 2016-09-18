@@ -76,18 +76,17 @@ H2: Evlis is a identical twin (IT);
 The data we are given (D) is that both elvis and his twin are male.
 
 Assuming that the chances for any given embryo to be male or female to be half and half, we can create the following table:
-
      | p(H) |  p(D|H) |  p(H)p(D|H)  |  p(H|D)
 -----|------|---------|--------------|---------  
-H1 | 1/125 | 1/2*1/2 | 1/500 | 6/11 
-H2 | 1/300 | 1/2 | 1/600 | 5/11
+  H1 | 1/125| 1/2*1/2 |     1/500    | 6/11 
+  H2 | 1/300| 1/2     |     1/600    | 5/11
 
 So the probably of Elvis being a identical twin is 5/11
 
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> From my current understanding of both Frequentist and Bayesian statistics, the main difference between the two approaches is the way a hypotheses is evaluted:  In Frequentist statistics, a null hypothesis is set up, and we determine whether the null hypothese is true or false by evaluating the frequency at which given results would occur given the null hypothsis. This frequency is then converted to a probability (which is the p-value of the data).  In Baysian statistics, one is forced to not only consider the likelihood of a result, but also the actual prior liklihood  of the hypothesis being tested. More emphases is put on contructing a model to determine the likihood of all the alternative hypotheses. The result of a Bayesian analyses give probabilities for different alternative hypotheses to be true, given the data.  In reality, both approaches are likely to be used during an analyses. A frequentist should consider the prior probility of a hypothesis before determinig the null hypothesis. As importantly, a Bayesian statistian should be careful not to construct unreasonable or overtly biased priors, which would sway the results.
+>> Based on my current understanding of both Frequentist and Bayesian statistics, the main difference between the two approaches is the way a hypotheses is evaluted:  In Frequentist statistics, a null hypothesis is set up, and we determine whether the null hypothese is true or false by evaluating the frequency at which given results would occur(given the null hypothsis). This frequency is then converted to a probability (which is the p-value of the data). The higher the p-value, the more likely the null-hypothesis is true.  In Baysian statistics, one is forced to not only consider the likelihood of a result, but also the actual prior likelihood  of the hypothesis being tested. More emphases is put on constructing a model to estimate the likihoods of all the alternative hypotheses. The result of a Bayesian analyses give probabilities for different alternative hypotheses to be true, given the data.  In reality, both approaches are likely to be used during an analyses. A frequentist should consider the prior probility of a hypothesis before determinig the null hypothesis. As importantly, a Bayesian statistian should be careful not to construct unreasonable or overtly biased priors, which would sway the results.
  
 
 ---
